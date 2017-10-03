@@ -1,0 +1,49 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": { 
+        "existingVNETName": {
+            "value": "sdr-vnet"
+        },
+        "existingSubnetName": {
+            "value": "testingsubnet"
+        },
+        "dnsLabelPrefix": {
+            "value": "test0012324"
+        },
+        "vmSize": {
+            "value": "Standard_A2"
+        },
+        "vmimage": {
+            "value": "2016-Datacenter"
+        },
+        "domainToJoin": {
+            "value": "identity.ms"
+        },
+        "domainUsername": {
+            "value": "sdelrio"
+        },
+    "existingvnetresourcegroup":{
+    "value" : "sdr-identity-lab"
+    },
+    "vmAdminUsername" :{
+     "value" : "sdelrio"
+    },        
+"vmAdminPassword": {
+            "reference": {
+              "keyVault": {
+                "id": "/subscriptions/3fbcf7e5-12cb-4292-8dc9-d3ace9268198/resourceGroups/security-sebastid/providers/Microsoft.KeyVault/vaults/kv-sebastid"
+              },
+              "secretName": "examplesecret"
+           }
+    },
+   "domainpassword": {
+            "reference": {
+              "keyVault": {
+                "id": "/subscriptions/3fbcf7e5-12cb-4292-8dc9-d3ace9268198/resourceGroups/security-sebastid/providers/Microsoft.KeyVault/vaults/kv-sebastid"
+              },
+              "secretName": "examplesecret"
+     }
+    }
+  }
+}
