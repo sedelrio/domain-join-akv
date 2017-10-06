@@ -1,4 +1,4 @@
-"# domain-join-akv" 
+This template will create a single doman joined VM without
 
 
 
