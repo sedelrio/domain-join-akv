@@ -210,7 +210,7 @@
       "type": "Microsoft.Compute/virtualMachines/extensions",
       "name": "[concat(parameters('dnsLabelPrefix'),'/joindomain')]",
       "location": "[resourceGroup().location]",
-      "dependsOn": ["[resourceId('Microsoft.Compute/virtualmachines', parameters('dnslabelprefix'))]"
+      "dependsOn": [
       ],
       "properties": {
         "publisher": "Microsoft.Compute",
