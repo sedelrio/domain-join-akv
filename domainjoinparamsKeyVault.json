@@ -9,7 +9,7 @@
           "value": "testingsubnet"
       },
       "dnsLabelPrefix": {
-          "value": "test0012324"
+          "value": "VMDomainJoinTest"
       },
       "vmSize": {
           "value": "Standard_A2"

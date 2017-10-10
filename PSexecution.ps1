@@ -21,6 +21,7 @@ $parameters = "C:\Users\sebastid\Documents\Documentation\Templates\Domain Join\d
 
 $template = "C:\Users\sebastid\Documents\Documentation\Templates\Domain Join Azure Key Vault\VM - Domain Join.KV.json"
 $parameters = "C:\Users\sebastid\Documents\Documentation\Templates\Domain Join Azure Key Vault\domainjoinparamsKeyVault.json"
+New-AzureRmResourceGroupDeployment -Name DomainJoin  -ResourceGroupName "testdomainjoin" -TemplateFile $template -TemplateParameterFile $parameters
 
 $template = "https://raw.githubusercontent.com/sedelrio/domain-join-akv/master/VM%20-%20Domain%20Join.KV.json"
 $parameters = "https://raw.githubusercontent.com/sedelrio/domain-join-akv/master/domainjoinparamsKeyVault.json"
